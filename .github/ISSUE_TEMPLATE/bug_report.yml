@@ -1,12 +1,12 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "open"]
+name: Bounty Request
+description: Request a analytics bounty
+title: "[Bounty]: "
+labels: ["bounty", "open"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Use this template to request a bounty from the footprint community!
   - type: input
     id: contact
     attributes:
@@ -16,40 +16,26 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Questions
+      description: Which business questions do you want to get answered?
+      placeholder: Tell us what you need!
+      value: "The sum of all DEX trades over the last month.."
     validations:
       required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
-    id: logs
+    id: scope
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Technical Scope
+      description: Do you need a dashboard, API access, etc?
+      value: "A dashboard that pulls data each day.."
+  - type: textarea
+    id: prize
+    attributes:
+      label: Bounty Prize
+      description: How do you intend to fund the bounty?
+      value: "As part of the Footprint bounty program.."
   - type: checkboxes
     id: terms
     attributes:
