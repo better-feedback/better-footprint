@@ -1,5 +1,5 @@
 name: Bounty Request
-description: Request a analytics bounty
+description: Request an analytics bounty
 title: "[Bounty]: "
 labels: ["bounty", "open"]
 body:
